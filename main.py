@@ -18,6 +18,7 @@ while True:
         else:
             print("Такої літери немає!")
             print("".join(n))
+            c += -1
     else:
         if k == b:
             print("Вітаю, ви вгадали слово")
@@ -25,10 +26,10 @@ while True:
         else:
             print("Слово не вірне!")
             print("".join(n))
+            c += -1
     if "*" not in n:
         print("Вітаю, ви вгадали слово")
         break
-    c += -1
     if c == 0:
         print("Кількість спроб закінчилась. Ви програли!")
         break
